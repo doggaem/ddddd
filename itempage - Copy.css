@@ -1,0 +1,119 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    background-color: white;
+    color: #AB5AE9;
+    box-shadow: 0 10px 38px rgba(0,0,0,0.30), 0 7px 12px rgba(0,0,0,0.22);
+    overflow: hidden;
+}
+.logo{
+    width: 103px;
+    display: flex;
+    height: 50px;
+    padding:5px;
+    margin: 0 auto;
+}
+.logo p{
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+.logo img{
+    height: 25px;
+    margin-top: 10px;
+}
+.itemInfo {
+    width: 360px;
+
+}
+.itemImg img{
+    width: 320px;
+    height: 180px;
+    display: block; 
+    margin: 0 auto;
+}
+.text{
+    margin: 0 auto;
+    width: 320px;
+}
+.itemName{
+    font-size: 25px;
+    margin: 0 0 0px 0;
+    color: #000000;
+    margin: 0;
+}
+.itemName h2{
+    margin: 0;
+    margin-top: 20px;
+}
+.price p{
+    font-size: 25px;
+    margin: 0;
+}
+.sendInfo input{
+    display: table;
+    width: 320px;
+    height: 50px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    border: #AB5AE9 3px solid;
+    box-sizing: border-box;
+    border-width: 0 0 3px 0;
+    transition: border-color 0.1s, color 0.1s;
+    padding-left:10px ;
+    font-size: 20px;
+}
+.buy {
+    border-radius: 20px;
+    text-align: center;
+    display: table;
+    width: 320px;
+    height: 50px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    border: #AB5AE9 3px solid;
+    box-sizing: border-box;
+    transition: border-color 0.1s, color 0.1s; /* 여기서 transition을 한 번만 정의 */
+}
+
+.buy:hover { /* .buy 클래스에 호버 효과 적용 */
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.buy h4 {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.disabled {
+    pointer-events: none; /* 클릭 비활성화 */
+    opacity: 0.5; /* 시각적으로 비활성화 */
+    cursor: not-allowed; /* 커서를 'not-allowed'로 변경 */
+    border-color: inherit; /* 비활성화 상태에서 경계색 유지 */
+    color: inherit; /* 비활성화 상태에서 색상 유지 */
+    background-color: #f0f0f0; /* 비활성화 상태에서 배경색 지정 */
+}
+
+.disabled:hover {
+    background-color: #f0f0f0; /* 비활성화 상태에서 배경색 유지 */
+    border-color: inherit; /* 경계색 유지 */
+    color: inherit; /* 텍스트 색상 유지 */
+    transition: border-color 0.1s, color 0.1s; 
+}
+
+.avail p{
+    margin-top: 0;
+}
+.desc{
+    margin: 0;
+    color: gray;
+}

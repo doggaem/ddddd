@@ -1,0 +1,223 @@
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    background-color: white;
+    color: #AB5AE9;
+    box-shadow: 0 10px 38px rgba(0,0,0,0.30), 0 7px 12px rgba(0,0,0,0.22);
+    overflow: hidden;
+}
+.logo{
+    width: 103px;
+    display: flex;
+    height: 50px;
+    padding:5px;
+    margin: 0 auto;
+}
+.logo p{
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+.logo img{
+    height: 25px;
+    margin-top: 10px;
+}
+.board {
+    width: 340px;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    color: #AB5AE9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* 아래 그림자 */
+                0 -4px 8px rgba(0, 0, 0, 0.2), /* 위 그림자 */
+                4px 0 8px rgba(0, 0, 0, 0.2), /* 오른쪽 그림자 */
+               -4px 0 8px rgba(0, 0, 0, 0.2); /* 왼쪽 그림자 */
+}
+.username {
+    color: whites;
+    width: 135px;
+    padding: 20px 0px 20px 30px;
+    line-height: 70%;
+    text-align: left;
+    position: relative;
+}
+.greetingUser a:link{
+    color: #AB5AE9;
+}
+
+
+.point{
+    display: flex;
+    margin: 40px 10px 40px 10px;
+    width: 180px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+
+}
+.point img{
+    margin: auto 5px;
+    height: 30px;
+}
+.points h2{
+    margin: auto auto;
+}
+.announce{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.buttons{
+    margin-top: 20px;
+}
+.topBtn{
+    display: flex;
+}
+.earningBtn{
+    background-color: #AB5AE9;
+    transition: ease-in-out 0.1s;
+    color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px 10px 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* 아래 그림자 */
+                0 -4px 8px rgba(0, 0, 0, 0.2), /* 위 그림자 */
+                4px 0 8px rgba(0, 0, 0, 0.2), /* 오른쪽 그림자 */
+               -4px 0 8px rgba(0, 0, 0, 0.2); /* 왼쪽 그림자 */
+}
+.earningBtn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+.earningBtn h4{
+    margin: 0 auto ;
+    text-align: center;
+}
+.earningBtn img{
+    width: 80px;
+    height: 80px;
+    margin: 20px 35px 0 35px;
+    
+}
+.shopBtn{
+    background-color: #AB5AE9;
+    transition: background-color 0.1s;
+    color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px 20px 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* 아래 그림자 */
+                0 -4px 8px rgba(0, 0, 0, 0.2), /* 위 그림자 */
+                4px 0 8px rgba(0, 0, 0, 0.2), /* 오른쪽 그림자 */
+               -4px 0 8px rgba(0, 0, 0, 0.2); /* 왼쪽 그림자 */
+}
+.shopBtn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+.shopBtn h4{
+    margin: 0 auto ;
+    text-align: center;
+}
+.shopBtn img{
+    width: 56px;
+    height: 80px;
+    margin: 20px 47px 0 47px;
+}
+.inviteBtn{
+    border-radius: 20px;
+    text-align: center;
+    display:table;
+    width: 320px;
+    height: 50px;
+    margin: 20px auto;
+    color: #AB5AE9;
+    box-sizing: border-box;
+    transition: border-color 0.1s;
+    transition: color 0.1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* 아래 그림자 */
+                0 -4px 8px rgba(0, 0, 0, 0.2), /* 위 그림자 */
+                4px 0 8px rgba(0, 0, 0, 0.2), /* 오른쪽 그림자 */
+               -4px 0 8px rgba(0, 0, 0, 0.2); /* 왼쪽 그림자 */
+}
+.inviteBtn:hover {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0); ;
+  }
+.inviteBtn h4{
+    margin: 0;
+    display:table-cell;
+    vertical-align: middle;
+}
+.contect{
+    margin-bottom: 30px;
+}
+.contectUs  {
+    color: #AB5AE9;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.contectUs ::before, .contectUs::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px; /* 구분선 길이 */
+    height: 3px;
+    background-color:#AB5AE9; /* 구분선 색상 */
+    border-radius: 50px;
+}
+
+.contectUs ::before {
+    left: 15px; /* 왼쪽 구분선 */
+    margin-right: 15px; /* 텍스트와 구분선 사이의 여백 */
+}
+
+.contectUs ::after {
+    right: 15px; /* 오른쪽 구분선 */
+    margin-left: 15px; /* 텍스트와 구분선 사이의 여백 */
+}
+.snsLogo{
+    display: flex;
+    color: black;
+}
+.snsLogo img{
+    height: 50px;
+    margin-left:20px;
+    margin-right:10px;
+}
+.logoutBtn{
+    color: red;
+    border-radius: 20px;
+    text-align: center;
+    display:table;
+    width: 320px;
+    height: 50px;
+    margin: 20px auto;
+    border: red 3px solid;
+    box-sizing: border-box;
+    transition: border-color 0.1s;
+    transition: color 0.1s;
+}
+.logoutBtn:hover {
+    border-color: grey;
+    color: grey ;
+  }
+.logoutBtn h4{
+    margin: 0;
+    display:table-cell;
+    vertical-align: middle;
+}
+.username a{
+    color: #AB5AE9;
+}

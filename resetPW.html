@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>sign up-adimal</title>
+    <link rel="icon" href="resource/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="signupForm"> <!-- form 태그로 감쌈 -->
+            <div class="signup">
+                <div class="text">
+                    <h1>adimal</h1>
+                </div>
+                <div class="username">
+                    <input type="text" id="username" name="username" placeholder="사용자 이름(4~7자)" required minlength="4" maxlength="7" pattern="[a-zA-Z0-9]+">
+                </div>
+                <div class="email">
+                    <input type="text" id="email" name="email" placeholder="이메일 주소" required>
+                </div>
+                <div class="password">
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required>
+                </div>
+                <div class="errorMsg" id="errorMsg">
+                    <p></p>
+                </div>
+                <div class="button">
+                    <button type="submit" id="PWResetButton"><strong>비밀번호 재설정</strong></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="resetPW.js"></script> <!-- 추가한 JS 파일 -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- 앱 이름 애드몰 -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>유료 게임 아이템을 무료로-adimal</title>
+    <link rel="icon" href="resource/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <p><strong>adimal</strong></p>
+                <img src="resource/logo_pur.png">
+                <a href ="#">마이패이지 구현기달</a>
+            </div>
+        </nav>
+        <div class="board">
+            <div class="username">
+                <h3>안녕하세요</h3>
+                <h3 id="greetingUser">로그인하지않음</h3> <!-- 사용자 이름 표시 -->
+            </div>
+            <div class="point">
+                <img src="resource/point.png">
+                <div class="points">
+                    <h2 style="text-align: center;"><span id="pointValue">0</span>p</h2> <!-- 포인트 표시 -->
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="buttons">
+                <div class="topBtn">
+                    <div class="earningBtn" onclick="checkLogin('earning.html')" style="cursor:pointer;">
+                        <img src="resource/point.png">
+                        <h4>포인트 모으기</h4>
+                    </div>
+                    <div class="shopBtn" onclick="checkLogin('shop.html')" style="cursor:pointer;">
+                        <img src="resource/logo_white.png">
+                        <h4>교환하러 가기</h4>
+                    </div>
+                </div>                
+                <div class="inviteBtn" OnClick="location.href ='#'" style="cursor:pointer;">
+                    <h4>친구 초대</h4>
+                </div>
+            </div>
+        </div>
+        <div class="contect">
+            <p class="contectUs"><strong>contect us</strong></p>
+            <div class="snsLogo">
+                <img src="resource/instaLogo.png">
+                <p><strong>adimalofficial</strong></p>
+            </div>
+        </div>
+        <div class="logout" id="logout" onclick="logout()">
+            <div class="logoutBtn">
+                <h4>로그아웃</h4>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
